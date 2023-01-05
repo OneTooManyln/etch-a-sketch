@@ -1,6 +1,12 @@
 
-const container = document.querySelector('body');
 
-const gridOne = document.createElement('div');
-gridOne.classList.add('gridone');
-container.appendChild(gridOne);
+function createGrid(x) {
+
+    for (let i = 0; i < x; i ++) {
+    const container = document.querySelector('div');
+
+        let div = document.createElement('div');
+        div.classList.add('grids');
+        container.appendChild(div);
+    }
+} createGrid(256);
