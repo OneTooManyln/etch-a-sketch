@@ -3,16 +3,24 @@ body {
 }
 
 .container {
-    height: 75rem;
-    width: 75rem;
+    position: relative;
+    height: 63.75rem;
+    width: 60rem;
+    margin: auto;    
+    padding: 0;
+    outline: .30rem solid black;
+
 }
 
 .grids{
     display: inline-block;
-    height: 4rem;
-    width: 4rem;
-    margin: .25rem;
-    background: black;
+    outline: .15rem solid black;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: rgb(58, 57, 57);
+    height: 3.75rem;
+    width: 3.75rem;
 }
 
 
