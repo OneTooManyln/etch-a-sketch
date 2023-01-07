@@ -29,3 +29,17 @@ function clearGrid() {
         div.removeChild(div.lastChild);
     }
 }
+
+//function that prompts user for new grid with # of sides. Call clearGrid function
+function newGrid() {
+    let userInput = prompt("How many squares per side for new grid?");
+    clearGrid();
+    createGrid(userInput);
+ 
+ }
+ 
+ //eventlistener that when clicked will create new grid with user input
+ const btn = document.querySelector('button');
+ btn.addEventListener('click', () => {
+     clearGrid();
+ })
