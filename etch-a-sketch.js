@@ -1,15 +1,18 @@
-
+const container = document.querySelector('.container');
 
 function createGrid(x) {
-
-    for (let i = 0; i < x; i ++) {
-    const container = document.querySelector('div');
-
-        let div = document.createElement('div');
-        div.classList.add('grids');
-        container.appendChild(div);
+    for (let i = 0; i < x; i++) {
+        for (let j = 0; j < x; j++) {
+            const div = document.createElement('div');
+            div.classList.add('grids');
+            container.appendChild(div);
+            div.style.height = `${960/x}px`;
+            div.style.width = `${960/x}px`;
+        }
     }
-} createGrid(256);
+    
+}createGrid(16);
+
 
 //function that when user hovers over div grid with mouse, the color changes, leaving behind a trail
 
