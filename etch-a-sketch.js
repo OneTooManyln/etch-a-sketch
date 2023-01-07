@@ -22,3 +22,10 @@ div.forEach ((div) => {
         div.style['background'] = 'white';
     })
 })
+
+//function to clear grid
+function clearGrid() {
+    while (div.firstChild) {
+        div.removeChild(div.lastChild);
+    }
+}
