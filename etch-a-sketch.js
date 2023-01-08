@@ -11,7 +11,7 @@ function createGrid(x) {
         }
     }
     
-}createGrid(16);
+}createGrid(20);
 
 
 //function that when user hovers over div grid with mouse, the color changes, leaving behind a trail
@@ -25,9 +25,7 @@ div.forEach ((div) => {
 
 //function to clear grid
 function clearGrid() {
-    while (div.firstChild) {
-        div.removeChild(div.lastChild);
-    }
+   div.forEach(grids => grids.remove());
 }
 
 //function that prompts user for new grid with # of sides. Call clearGrid function
@@ -41,5 +39,5 @@ function newGrid() {
  //eventlistener that when clicked will create new grid with user input
  const btn = document.querySelector('button');
  btn.addEventListener('click', () => {
-     clearGrid();
+     newGrid();
  })
